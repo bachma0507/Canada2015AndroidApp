@@ -27,7 +27,7 @@ import com.google.gson.Gson;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
-import org.bicsi.fall2014.R;
+import org.bicsi.winter2015.R;
 import org.bicsi.canada2014.activities.MainActivity;
 import org.bicsi.canada2014.adapter.AlertAdapter;
 import org.bicsi.canada2014.adapter.AlertsAdapter;

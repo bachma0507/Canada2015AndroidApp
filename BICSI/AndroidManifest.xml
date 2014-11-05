@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.bicsi.fall2014"
-    android:versionCode="2"
-    android:versionName="2.00" >
+    package="org.bicsi.winter2015"
+    android:versionCode="1"
+    android:versionName="1.00" >
 
     <uses-sdk
         android:hardwareAccelerated="true"
@@ -21,9 +21,9 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />    
-     <uses-permission android:name="org.bisci.fall2014.permission.C2D_MESSAGE" />   
+     <uses-permission android:name="org.bisci.winter2015.permission.C2D_MESSAGE" />   
     <permission
-        android:name="org.bicsi.fall2014.permission.C2D_MESSAGE"
+        android:name="org.bicsi.winter2015.permission.C2D_MESSAGE"
         android:protectionLevel="signature" /> 
 
     <application
@@ -173,7 +173,7 @@
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
                 <!-- IMPORTANT: Change "com.parse.tutorials.pushnotifications" to match your app's package name. -->
-                <category android:name="org.bicsi.fall2014" />
+                <category android:name="org.bicsi.winter2015" />
             </intent-filter>
         </receiver>
     </application>

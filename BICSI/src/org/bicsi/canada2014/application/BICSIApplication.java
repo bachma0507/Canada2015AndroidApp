@@ -17,7 +17,7 @@ public class BICSIApplication extends Application {
 	  public void onCreate() {
 	    // The following line triggers the initialization of ACRA
 
-	    Parse.initialize(this, "nUvLNNLojaTc5sM6tDorVLEAXRhoasuUBsvM27xP", "BxrMznvDlbg8TPOsmLRFnxgLvxmccPKEOwXrJgcl");
+	    Parse.initialize(this, "H025T6dVCXIyDm0kVYZEyMjqap5K36iu0ZsgYVai", "7uI3KCMsxUBxkivTAg8WYXI82wJPqFzA3EvOKH72");
 	    PushService.setDefaultPushCallback(this, MainActivity.class);
 	    
 	    super.onCreate();

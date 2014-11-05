@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.content.Intent;
 
-import org.bicsi.fall2014.R;
+import org.bicsi.winter2015.R;
 import org.bicsi.canada2014.activities.MainActivity;
 
 import org.bicsi.canada2014.common.MizeUtil.NavigateToTabFragmentListener;

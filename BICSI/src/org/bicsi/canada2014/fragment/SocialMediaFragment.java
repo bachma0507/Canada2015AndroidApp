@@ -1,6 +1,6 @@
 package org.bicsi.canada2014.fragment;
 
-import org.bicsi.fall2014.R;
+import org.bicsi.winter2015.R;
 import org.bicsi.canada2014.AndroidTwitterSample;
 import org.bicsi.canada2014.IntentData;
 import org.bicsi.canada2014.activities.MainActivity;

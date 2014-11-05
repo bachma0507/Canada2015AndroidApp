@@ -1,6 +1,6 @@
 package org.bicsi.canada2014.fragment;
 
-import org.bicsi.fall2014.R;
+import org.bicsi.winter2015.R;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;

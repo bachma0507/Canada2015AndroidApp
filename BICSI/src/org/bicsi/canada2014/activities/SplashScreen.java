@@ -2,7 +2,7 @@ package org.bicsi.canada2014.activities;
 
 
 
-import org.bicsi.fall2014.R;
+import org.bicsi.winter2015.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;

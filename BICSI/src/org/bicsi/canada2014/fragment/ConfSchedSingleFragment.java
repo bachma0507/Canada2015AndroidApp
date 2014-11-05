@@ -6,7 +6,7 @@ import org.bicsi.canada2014.activities.MainActivity;
 import org.bicsi.canada2014.activities.WebViewActivity;
 import org.bicsi.canada2014.adapter.SQLiteDBAllData;
 import org.bicsi.canada2014.common.MizeUtil.NavigateToTabFragmentListener;
-import org.bicsi.fall2014.R;
+import org.bicsi.winter2015.R;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
