@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:hardwareAccelerated="true"
-        android:minSdkVersion="11"
+        android:minSdkVersion="14"
         android:targetSdkVersion="17" />
 
 
