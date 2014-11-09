@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ffffff"
+    android:background="@drawable/billow_bkgnd"
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/conference"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
 
             <TextView
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/schedule"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/presentations"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/surveys"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
@@ -134,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/exhibithall"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
 
             <TextView
@@ -143,7 +143,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/schedule"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -169,7 +169,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/exhibitorsearch"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -195,7 +195,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/exhibitormap"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
@@ -230,7 +230,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/cecinfo"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -257,7 +257,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/committee"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
 
             <TextView
@@ -266,7 +266,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/meetings"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -293,7 +293,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/training"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
 
             <TextView
@@ -302,7 +302,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/exams"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
@@ -337,7 +337,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/hotelinformation"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -363,7 +363,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/contactus"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -389,7 +389,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/welcome"
-                android:textColor="@color/black"
+                android:textColor="#AAffffff"
                 android:textSize="16sp" />
 
         </LinearLayout>

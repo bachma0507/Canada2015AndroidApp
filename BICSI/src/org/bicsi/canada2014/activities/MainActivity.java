@@ -83,7 +83,6 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.PushService;
 import com.pushio.manager.PushIOManager;
-import com.stackmob.android.sdk.common.StackMobAndroid;
 
 
 
@@ -616,7 +615,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
   private class GetJSONData  extends AsyncTask<Void, Void, Void> {
 	  
 	  private ProgressDialog pDialog;
-	  private static final String url = "https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-FALL-CA-0914";
+	  private static final String url = "https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0215";
 	  private String myLongStr;
 	  private String myLongStrEnd;
 	  
@@ -887,7 +886,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
   
   public void GetURL(){
 		// WebServer Request URL
-       String serverURL = "http://speedyreference.com/ehscheduleF14test.php";
+       String serverURL = "http://speedyreference.com/ehscheduleW15.php";
        
        // Use AsyncTask execute Method To Prevent ANR Problem
        new LongOperation().execute(serverURL);
@@ -895,7 +894,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
   
   public void GetURLCSched(){
 		// WebServer Request URL
-     String serverURL = "http://speedyreference.com/cscheduleF14.php";
+     String serverURL = "http://speedyreference.com/cscheduleW15.php";
      
      // Use AsyncTask execute Method To Prevent ANR Problem
      new LongOperationCSched().execute(serverURL);
