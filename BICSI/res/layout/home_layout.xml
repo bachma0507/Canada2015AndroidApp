@@ -381,6 +381,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:visibility="gone"
                 android:src="@drawable/bicsi_welcome" />
 
             <TextView
@@ -388,7 +389,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/welcome"
+                android:text="hidden"
+                android:visibility="gone"
                 android:textColor="#AAffffff"
                 android:textSize="16sp" />
 
