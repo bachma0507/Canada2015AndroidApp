@@ -82,6 +82,7 @@ import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.PushService;
+import com.parse.ParseAnonymousUtils;
 import com.pushio.manager.PushIOManager;
 
 
