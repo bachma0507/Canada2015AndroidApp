@@ -1233,7 +1233,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
 			txtTab1.setTextColor(getResources().getColor(R.color.bicsi_yellow));
 			imgTab2.setImageResource(R.drawable.icons_alerts);
 			txtTab2.setTextColor(Color.WHITE);
-			imgTab3.setImageResource(R.drawable.icons_social);
+			imgTab3.setImageResource(R.drawable.icon_gallery);
 			txtTab3.setTextColor(Color.WHITE);
 			imgTab4.setImageResource(R.drawable.icons_mybicsi);
 			txtTab4.setTextColor(Color.WHITE);
@@ -1244,7 +1244,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
 			txtTab1.setTextColor(Color.WHITE);
 			imgTab2.setImageResource(R.drawable.icons_alerts_sel);
 			txtTab2.setTextColor(getResources().getColor(R.color.bicsi_yellow));
-			imgTab3.setImageResource(R.drawable.icons_social);
+			imgTab3.setImageResource(R.drawable.icon_gallery);
 			txtTab3.setTextColor(Color.WHITE);
 			imgTab4.setImageResource(R.drawable.icons_mybicsi);
 			txtTab4.setTextColor(Color.WHITE);
@@ -1254,7 +1254,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
 			txtTab1.setTextColor(Color.WHITE);
 			imgTab2.setImageResource(R.drawable.icons_alerts);
 			txtTab2.setTextColor(Color.WHITE);
-			imgTab3.setImageResource(R.drawable.icons_social_sel);
+			imgTab3.setImageResource(R.drawable.icon_gallery_sel);
 			txtTab3.setTextColor(getResources().getColor(R.color.bicsi_yellow));
 			imgTab4.setImageResource(R.drawable.icons_mybicsi);
 			txtTab4.setTextColor(Color.WHITE);
@@ -1265,7 +1265,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
 			txtTab1.setTextColor(Color.WHITE);
 			imgTab2.setImageResource(R.drawable.icons_alerts);
 			txtTab2.setTextColor(Color.WHITE);
-			imgTab3.setImageResource(R.drawable.icons_social);
+			imgTab3.setImageResource(R.drawable.icon_gallery);
 			txtTab3.setTextColor(Color.WHITE);
 			imgTab4.setImageResource(R.drawable.icons_mybicsi_sel);
 			txtTab4.setTextColor(getResources().getColor(R.color.bicsi_yellow));

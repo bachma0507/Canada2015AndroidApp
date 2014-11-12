@@ -110,7 +110,7 @@
                     android:layout_height="32dp"
                     android:layout_gravity="center"
                     android:paddingTop="1dp"
-                    android:src="@drawable/icons_social" />
+                    android:src="@drawable/icon_gallery" />
             </FrameLayout>
 
             <TextView
