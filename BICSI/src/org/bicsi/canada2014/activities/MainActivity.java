@@ -20,6 +20,7 @@ import java.util.Locale;
 import org.apache.http.client.HttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.bicsi.winter2015.R;
+
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
@@ -63,6 +64,7 @@ import org.bicsi.canada2014.common.MizeUtil;
 import org.bicsi.canada2014.common.MizeUtil.PromptReturnListener;
 import org.bicsi.canada2014.fragment.AboutUsFragment;
 import org.bicsi.canada2014.fragment.AlertsFragment;
+import org.bicsi.canada2014.fragment.GalleryLoginFragment;
 import org.bicsi.canada2014.fragment.HomeFragment;
 import org.bicsi.canada2014.fragment.EhallSchedFragment2;
 import org.bicsi.canada2014.fragment.SocialMediaFragment;
@@ -1015,7 +1017,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
 
 		tabList1.add(new HomeFragment());
 		tabList2.add(new AlertsFragment());
-		tabList3.add(new SocialMediaFragment());
+		tabList3.add(new GalleryLoginFragment());
 		
 		
 		Bundle bundlem = new Bundle();
@@ -1445,7 +1447,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
 			if (tabList3.size() > 0) {
 				oldTab = tabList3.remove(tabList3.size() - 1);
 				tabList3.clear();
-				tabList3.add(new SocialMediaFragment());
+				tabList3.add(new GalleryLoginFragment());
 				tab = tabList3.get(tabList3.size() - 1);
 			}
 			break;
