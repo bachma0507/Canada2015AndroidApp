@@ -381,17 +381,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:visibility="gone"
-                android:src="@drawable/bicsi_welcome" />
+                android:src="@drawable/email" />
 
             <TextView
                 android:id="@+id/txtWelcome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="hidden"
-                android:visibility="gone"
                 android:textColor="#AAffffff"
+                android:text="@string/comments"
                 android:textSize="16sp" />
 
         </LinearLayout>

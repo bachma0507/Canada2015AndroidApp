@@ -11,13 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 import android.content.Intent;
 
 import org.bicsi.winter2015.R;
 import org.bicsi.canada2014.activities.MainActivity;
-
 import org.bicsi.canada2014.common.MizeUtil.NavigateToTabFragmentListener;
-
 
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.analytics.tracking.android.MapBuilder;
@@ -150,8 +149,19 @@ public class HomeFragment extends Fragment {
 		});
 		ivBicsiwelcome.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
+				
+				Intent i = new Intent(Intent.ACTION_SEND);
+				i.setType("message/rfc822");
+				i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"support@bicsi.org"});
+				i.putExtra(Intent.EXTRA_SUBJECT, "Comments for Winter 2015 Conference");
+				i.putExtra(Intent.EXTRA_TEXT   , "{Device - Android} Your Comments:");
+				try {
+				    startActivity(Intent.createChooser(i, "Send mail..."));
+				} catch (android.content.ActivityNotFoundException ex) {
+				    Toast.makeText(getActivity(), "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+				}
 
-				openInternalWebview("http://microsite.anaheimoc.org/2014-bicsi-fall-conference-exhibition");
+				//openInternalWebview("http://microsite.anaheimoc.org/2014-bicsi-fall-conference-exhibition");
 			}
 		});
 		return v;
