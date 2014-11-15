@@ -5,11 +5,16 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnKeyListener;
+import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.content.Context;
 import android.content.Intent;
 
 import org.bicsi.winter2015.R;
@@ -17,6 +22,7 @@ import org.bicsi.canada2014.activities.MainActivity;
 import org.bicsi.canada2014.activities.Welcome;
 
 import android.view.View.OnClickListener;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -33,6 +39,8 @@ public class GalleryLoginFragment extends Fragment {
 private NavigateToTabFragmentListener mCallback;
 	
 	private Fragment newFragment = new GallerySignupFragment();
+	
+	private Fragment newFragment2 = new LoginSuccessFragment();
 	
 	// Declare Variables
 		Button loginbutton;
@@ -77,6 +85,9 @@ private NavigateToTabFragmentListener mCallback;
 					// Retrieve the text entered from the EditText
 					usernametxt = username.getText().toString();
 					passwordtxt = password.getText().toString();
+					
+					InputMethodManager imm = (InputMethodManager)getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+	                imm.hideSoftInputFromWindow(password.getWindowToken(), 0); 
 
 					// Send data to Parse.com for verification
 					ParseUser.logInInBackground(usernametxt, passwordtxt,
@@ -88,6 +99,9 @@ private NavigateToTabFragmentListener mCallback;
 												getActivity(),
 												Welcome.class);
 										startActivity(intent);*/
+										
+										mCallback.navigateToTabFragment(newFragment2, null);
+										
 										Toast.makeText(getActivity(),
 												"Successfully Logged in",
 												Toast.LENGTH_LONG).show();
@@ -115,7 +129,38 @@ private NavigateToTabFragmentListener mCallback;
 				
 			});
 			
+			
+			v.setOnTouchListener(new OnTouchListener()
+			{
+			    @Override
+			    public boolean onTouch(View view, MotionEvent ev)
+			    {
+			        hideKeyboard(view);
+			        return false;
+			    }
+
+			});
+			
+			
+			
 			return v;
+			
+			
 		}
 		
+		/**
+		* Hides virtual keyboard
+		*
+		* @author kvarela
+		*/
+		protected void hideKeyboard(View view)
+		{
+		    InputMethodManager in = (InputMethodManager) ((getActivity())).getSystemService(Context.INPUT_METHOD_SERVICE);
+		    in.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+		}
+		
+		
+		
 }
+
+

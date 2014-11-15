@@ -6,10 +6,12 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.content.Context;
 import android.content.Intent;
 
 import org.bicsi.winter2015.R;
@@ -17,6 +19,8 @@ import org.bicsi.canada2014.activities.MainActivity;
 import org.bicsi.canada2014.activities.Welcome;
 
 import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -97,9 +101,31 @@ public class GallerySignupFragment extends Fragment {
 
 					}
 				});
+				
+				v.setOnTouchListener(new OnTouchListener()
+				{
+				    @Override
+				    public boolean onTouch(View view, MotionEvent ev)
+				    {
+				        hideKeyboard(view);
+				        return false;
+				    }
+
+				});
 
 	
 				return v;
 			}
 
+			
+			/**
+			* Hides virtual keyboard
+			*
+			* @author kvarela
+			*/
+			protected void hideKeyboard(View view)
+			{
+			    InputMethodManager in = (InputMethodManager) ((getActivity())).getSystemService(Context.INPUT_METHOD_SERVICE);
+			    in.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+			}
 }
