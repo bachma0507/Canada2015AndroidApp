@@ -44,6 +44,10 @@
     <string name="ViewGallery">View Gallery</string>
     <string name="UploadPhoto">Upload Photo</string>
     <string name="WelcomeToGallery">Welcome to the Photo Gallery</string>
+    
+    <string name="ranklabel">"User : "</string>
+    <string name="countrylabel">"Country : "</string>
+    <string name="populationlabel">"Comment : "</string>
 	
 	
 	<string name="bicsialerts">Alerts</string>

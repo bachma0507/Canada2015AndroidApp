@@ -34,6 +34,9 @@ import org.bicsi.canada2014.common.MizeUtil.NavigateToTabFragmentListener;
 
 public class GallerySignupFragment extends Fragment {
 	
+private NavigateToTabFragmentListener mCallback;
+	
+	private Fragment newFragment = new LoginSuccessFragment();
 	
 	// Declare Variables
 			Button loginbutton;
@@ -44,6 +47,17 @@ public class GallerySignupFragment extends Fragment {
 			EditText password;
 			EditText username;
 			EditText email;
+			
+			public void onAttach(Activity activity) {
+				super.onAttach(activity);
+
+				try {
+					mCallback = (NavigateToTabFragmentListener) activity;
+				} catch (ClassCastException e) {
+					throw new ClassCastException(activity.toString()
+							+ " must implement NavigateToListener");
+				}
+			}
 			
 			@Override
 			public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -68,6 +82,9 @@ public class GallerySignupFragment extends Fragment {
 						emailtxt = email.getText().toString();
 						passwordtxt = password.getText().toString();
 						
+						InputMethodManager imm = (InputMethodManager)getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+		                imm.hideSoftInputFromWindow(password.getWindowToken(), 0); 
+						
 						// Force user to fill up the form
 						if (usernametxt.equals("") || passwordtxt.equals("") || emailtxt.equals("")) {
 							Toast.makeText(getActivity(),
@@ -87,8 +104,10 @@ public class GallerySignupFragment extends Fragment {
 								public void done(ParseException e) {
 									if (e == null) {
 										// Show a simple Toast message upon successful registration
+										mCallback.navigateToTabFragment(newFragment, null);
+										
 										Toast.makeText(getActivity(),
-												"Successfully Signed up, please log in.",
+												"Successfully Signed up, you're now logged in.",
 												Toast.LENGTH_LONG).show();
 									} else {
 										Toast.makeText(getActivity(),

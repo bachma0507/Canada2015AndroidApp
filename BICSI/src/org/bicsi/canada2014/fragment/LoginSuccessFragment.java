@@ -35,6 +35,8 @@ import org.bicsi.canada2014.common.MizeUtil.NavigateToTabFragmentListener;
 public class LoginSuccessFragment extends Fragment {
 	private NavigateToTabFragmentListener mCallback;
 	
+	private Fragment newFragment = new GalleryViewFragment();
+	
 	// Declare Variables
 			Button viewGalleryButton;
 			Button uploadPhotoButton;
@@ -59,29 +61,17 @@ public class LoginSuccessFragment extends Fragment {
 				viewGalleryButton = (Button) v.findViewById(R.id.viewgallerybtn);
 				uploadPhotoButton = (Button) v.findViewById(R.id.uploadphotobtn);
 				
-				
-				v.setOnTouchListener(new OnTouchListener()
-				{
-				    @Override
-				    public boolean onTouch(View view, MotionEvent ev)
-				    {
-				        hideKeyboard(view);
-				        return false;
-				    }
-
+				viewGalleryButton.setOnClickListener(new View.OnClickListener() {
+					public void onClick(View v) {
+						//openInternalWebview("http://www.bicsi.org/m/Schedule.aspx");
+						
+						mCallback.navigateToTabFragment(newFragment, null);
+					}
 				});
+				
 				
 				return v;
 			}
 			
-			/**
-			* Hides virtual keyboard
-			*
-			* @author kvarela
-			*/
-			protected void hideKeyboard(View view)
-			{
-			    InputMethodManager in = (InputMethodManager) ((getActivity())).getSystemService(Context.INPUT_METHOD_SERVICE);
-			    in.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
-			}
+			
 }
