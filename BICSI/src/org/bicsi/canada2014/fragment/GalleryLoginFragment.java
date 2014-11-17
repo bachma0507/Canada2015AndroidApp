@@ -102,8 +102,12 @@ private NavigateToTabFragmentListener mCallback;
 										
 										mCallback.navigateToTabFragment(newFragment2, null);
 										
+										ParseUser currentUser = ParseUser.getCurrentUser();
+										
+										String struser = currentUser.toString();
+										
 										Toast.makeText(getActivity(),
-												"Successfully Logged in",
+												"Successfully Logged in " + struser,
 												Toast.LENGTH_LONG).show();
 										//finish();
 									} else {

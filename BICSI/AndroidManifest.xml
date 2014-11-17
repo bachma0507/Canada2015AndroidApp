@@ -8,6 +8,10 @@
         android:hardwareAccelerated="true"
         android:minSdkVersion="14"
         android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
 
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -156,6 +160,11 @@
             android:name="org.bicsi.canada2014.fragment.EhallSchedDetailFragment2"
             android:label="@string/app_title"
             android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="org.bicsi.canada2014.activities.NewMealActivity"
+            android:label="@string/title_activity_new_meal" >
         </activity>
 
         <service android:name="com.parse.PushService" />

@@ -48,6 +48,12 @@
     <string name="ranklabel">"User : "</string>
     <string name="countrylabel">"Country : "</string>
     <string name="populationlabel">"Comment : "</string>
+    
+    <string name="comment_label">Add a Comment</string>
+    <string name="save_button_text">Save</string>
+    <string name="cancel_button_text">Cancel</string>
+    
+    <string name="title_activity_new_meal">Photo Upload</string>
 	
 	
 	<string name="bicsialerts">Alerts</string>

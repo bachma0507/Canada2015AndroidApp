@@ -16,6 +16,7 @@ import android.content.Intent;
 
 import org.bicsi.winter2015.R;
 import org.bicsi.canada2014.activities.MainActivity;
+import org.bicsi.canada2014.activities.NewMealActivity;
 import org.bicsi.canada2014.activities.Welcome;
 
 import android.view.View.OnClickListener;
@@ -36,6 +37,7 @@ public class LoginSuccessFragment extends Fragment {
 	private NavigateToTabFragmentListener mCallback;
 	
 	private Fragment newFragment = new GalleryViewFragment();
+	private Fragment newFragment2 = new fragment_new_upload();
 	
 	// Declare Variables
 			Button viewGalleryButton;
@@ -66,6 +68,16 @@ public class LoginSuccessFragment extends Fragment {
 						//openInternalWebview("http://www.bicsi.org/m/Schedule.aspx");
 						
 						mCallback.navigateToTabFragment(newFragment, null);
+					}
+				});
+				
+				uploadPhotoButton.setOnClickListener(new View.OnClickListener() {
+					public void onClick(View v) {
+						
+						Intent intent = new Intent(getActivity(), NewMealActivity.class);
+						startActivity(intent);
+						
+						//mCallback.navigateToTabFragment(newFragment2, null);
 					}
 				});
 				
