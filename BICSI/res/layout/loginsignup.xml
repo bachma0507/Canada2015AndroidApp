@@ -6,9 +6,17 @@
     android:padding="10dip" >
 
     <TextView
+        android:id="@+id/logintextview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logintext"
+        android:padding="10dip" />
+    
+    <TextView
         android:id="@+id/txtusername"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/logintextview"
         android:text="@string/Username" />
 
     <EditText

@@ -130,21 +130,24 @@ public class CameraFragment extends Fragment {
 				matrix, true);
 
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
-		rotatedScaledMealImage.compress(Bitmap.CompressFormat.JPEG, 100, bos);
+		rotatedScaledMealImage.compress(Bitmap.CompressFormat.JPEG, 40, bos);
 
 		byte[] scaledData = bos.toByteArray();
 
 		// Save the scaled image to Parse
 		photoFile = new ParseFile("img", scaledData);
 		photoFile.saveInBackground(new SaveCallback() {
-
+			
 			public void done(ParseException e) {
+				
 				if (e != null) {
 					Toast.makeText(getActivity(),
 							"Error saving: " + e.getMessage(),
 							Toast.LENGTH_LONG).show();
 				} else {
+					
 					addPhotoToMealAndReturn(photoFile);
+					
 				}
 			}
 		});

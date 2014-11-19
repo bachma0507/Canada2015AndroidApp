@@ -60,5 +60,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/login"
         android:text="@string/SignupBtn" />
+    
+    <TextView
+        android:id="@+id/privacytextview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup"
+        android:layout_marginTop="40dp"
+        android:text="@string/privacylink" />
 
 </RelativeLayout>

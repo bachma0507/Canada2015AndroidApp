@@ -104,7 +104,8 @@ private NavigateToTabFragmentListener mCallback;
 										
 										ParseUser currentUser = ParseUser.getCurrentUser();
 										
-										String struser = currentUser.toString();
+										//String struser = currentUser.toString();
+										String struser = currentUser.getString("fullname");
 										
 										Toast.makeText(getActivity(),
 												"Successfully Logged in " + struser,

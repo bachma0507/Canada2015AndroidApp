@@ -108,4 +108,5 @@ public class GalleryViewFragment extends Fragment {
 						}
 					}
 					
+					
 }

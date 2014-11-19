@@ -207,7 +207,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
       ParseInstallation.getCurrentInstallation().saveInBackground();
       ParseAnalytics.trackAppOpened(getIntent());   		
         
-        Crittercism.initialize(getApplicationContext(), "53c5775907229a0751000002");
+        Crittercism.initialize(getApplicationContext(), "543ec96783fb7964b8000010");
         
         setupTabs();
 		resetTabs();		

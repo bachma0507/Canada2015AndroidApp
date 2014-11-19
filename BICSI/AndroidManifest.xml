@@ -164,6 +164,8 @@
         
         <activity
             android:name="org.bicsi.canada2014.activities.NewMealActivity"
+            android:screenOrientation="portrait"
+   			android:configChanges="orientation|keyboardHidden">
             android:label="@string/title_activity_new_meal" >
         </activity>
 

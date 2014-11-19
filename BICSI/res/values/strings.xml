@@ -45,7 +45,7 @@
     <string name="UploadPhoto">Upload Photo</string>
     <string name="WelcomeToGallery">Welcome to the Photo Gallery</string>
     
-    <string name="ranklabel">"User : "</string>
+    <string name="ranklabel">"Uploaded by : "</string>
     <string name="countrylabel">"Country : "</string>
     <string name="populationlabel">"Comment : "</string>
     
@@ -54,6 +54,10 @@
     <string name="cancel_button_text">Cancel</string>
     
     <string name="title_activity_new_meal">Photo Upload</string>
+    <string name="logintext">If you have a user account for the Photo Gallery, please sign in below. If not, please sign up.</string>
+	<string name="privacylink">View Privacy Policy</string>
+	<string name="uploadwarning">Please tap the Camera icon to take a photo. All photos and comments will be reviewed before being posted to the gallery. Any photos with potential indecency issues will not be posted and your user account will be terminated.</string>
+	<string name="comment_hint">Required</string>
 	
 	
 	<string name="bicsialerts">Alerts</string>

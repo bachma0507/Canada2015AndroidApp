@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -23,6 +24,7 @@ import android.view.View.OnTouchListener;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.parse.LogInCallback;
@@ -47,6 +49,7 @@ private NavigateToTabFragmentListener mCallback;
 			EditText password;
 			EditText username;
 			EditText email;
+			TextView privacytextview;
 			
 			public void onAttach(Activity activity) {
 				super.onAttach(activity);
@@ -65,7 +68,7 @@ private NavigateToTabFragmentListener mCallback;
 				super.onCreateView(inflater, container, savedInstanceState);
 				View v = inflater.inflate(R.layout.gallery_signup, container, false);
 				
-				
+				privacytextview = (TextView)v.findViewById(R.id.privacytextview);
 				username = (EditText) v.findViewById(R.id.username);
 				password = (EditText) v.findViewById(R.id.password);
 				email = (EditText) v.findViewById(R.id.email);
@@ -105,9 +108,11 @@ private NavigateToTabFragmentListener mCallback;
 									if (e == null) {
 										// Show a simple Toast message upon successful registration
 										mCallback.navigateToTabFragment(newFragment, null);
+										ParseUser currentUser = ParseUser.getCurrentUser();
+										String struser = currentUser.getString("fullname");
 										
 										Toast.makeText(getActivity(),
-												"Successfully Signed up, you're now logged in.",
+												"Successfully Signed up, you're now logged in " + struser,
 												Toast.LENGTH_LONG).show();
 									} else {
 										Toast.makeText(getActivity(),
@@ -130,6 +135,19 @@ private NavigateToTabFragmentListener mCallback;
 				        return false;
 				    }
 
+				});
+				
+				
+				privacytextview.setOnClickListener(new View.OnClickListener() {
+					public void onClick(View v) {
+						
+						Uri uri = Uri.parse("http://www.speedyreference.com/bicsi/androidappprivacy.html");
+						Intent browserIntent = new Intent(Intent.ACTION_VIEW);
+						browserIntent.setDataAndType(uri, "text/html");
+						browserIntent.addCategory(Intent.CATEGORY_BROWSABLE);
+						getActivity().startActivity(browserIntent);
+						
+					}
 				});
 
 	
