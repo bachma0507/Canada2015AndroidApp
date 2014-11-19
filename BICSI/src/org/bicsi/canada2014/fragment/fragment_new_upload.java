@@ -1,13 +1,25 @@
 package org.bicsi.canada2014.fragment;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.http.NameValuePair;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.ResponseHandler;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.BasicResponseHandler;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
 import org.bicsi.winter2015.R;
 
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -168,6 +180,8 @@ public class fragment_new_upload extends Fragment {
 						if (e == null) {
 							getActivity().setResult(Activity.RESULT_OK);
 							getActivity().finish();
+							//postData(comment.getText().toString());
+							new PostDataTask().execute();
 						} else {
 							Toast.makeText(
 									getActivity().getApplicationContext(),
@@ -239,4 +253,83 @@ public class fragment_new_upload extends Fragment {
 	    InputMethodManager in = (InputMethodManager) ((getActivity())).getSystemService(Context.INPUT_METHOD_SERVICE);
 	    in.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
 	}
+	
+	private class PostDataTask extends AsyncTask<String, Void, Void> {
+		// Create a new HttpClient and Post Header
+		HttpClient httpclient = new DefaultHttpClient();
+		HttpPost httppost = new HttpPost("https://speedyreference.com/newpicsubmitted.php");
+
+		//This is the data to send
+		String message = comment.getText().toString(); //any data to send
+		
+		/*protected void onPreExecute() {
+		//NOT SURE
+		}*/
+		
+		// Call after onPreExecute method
+        protected Void doInBackground(String... urls){
+
+		try {
+		// Add your data
+		List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
+		nameValuePairs.add(new BasicNameValuePair("message", message));
+
+		httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+
+		// Execute HTTP Post Request
+
+		ResponseHandler<String> responseHandler = new BasicResponseHandler();
+		String response = httpclient.execute(httppost, responseHandler);
+
+		//This is the response from a php application
+		/*String reverseString = response;
+		Toast.makeText(getActivity(), "response" + reverseString, Toast.LENGTH_LONG).show();*/
+		
+		} 
+		
+		catch (ClientProtocolException e) {
+		Toast.makeText(getActivity(), "CPE response " + e.toString(), Toast.LENGTH_LONG).show();
+		// TODO Auto-generated catch block
+		} catch (IOException e) {
+		Toast.makeText(getActivity(), "IOE response " + e.toString(), Toast.LENGTH_LONG).show();
+		// TODO Auto-generated catch block
+		}
+		return null;
+		}//end postData()
+}
+	
+	/*public void postData(String toPost) {
+		// Create a new HttpClient and Post Header
+		HttpClient httpclient = new DefaultHttpClient();
+		HttpPost httppost = new HttpPost("https://speedyreference.com/newpicsubmitted.php");
+
+		//This is the data to send
+		String message = comment.getText().toString(); //any data to send
+
+		try {
+		// Add your data
+		List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
+		nameValuePairs.add(new BasicNameValuePair("action", message));
+
+		httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+
+		// Execute HTTP Post Request
+
+		ResponseHandler<String> responseHandler = new BasicResponseHandler();
+		String response = httpclient.execute(httppost, responseHandler);
+
+		//This is the response from a php application
+		String reverseString = response;
+		Toast.makeText(getActivity(), "response" + reverseString, Toast.LENGTH_LONG).show();
+
+		} catch (ClientProtocolException e) {
+		Toast.makeText(getActivity(), "CPE response " + e.toString(), Toast.LENGTH_LONG).show();
+		// TODO Auto-generated catch block
+		} catch (IOException e) {
+		Toast.makeText(getActivity(), "IOE response " + e.toString(), Toast.LENGTH_LONG).show();
+		// TODO Auto-generated catch block
+		}
+
+		}//end postData()*/
+	
 }

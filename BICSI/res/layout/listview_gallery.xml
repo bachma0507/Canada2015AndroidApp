@@ -7,7 +7,8 @@
         android:id="@+id/flag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="false"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:background="#000000"
         android:padding="1dp" />
 
@@ -16,6 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/flag"
+        android:layout_marginLeft="5dp"
         android:text="@string/ranklabel" />
 
     <TextView
@@ -46,6 +48,7 @@
         android:id="@+id/populationlabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
         android:layout_below="@+id/ranklabel"
         android:text="@string/populationlabel" />
 
