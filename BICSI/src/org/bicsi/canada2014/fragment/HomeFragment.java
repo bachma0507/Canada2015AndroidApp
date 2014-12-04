@@ -119,7 +119,7 @@ public class HomeFragment extends Fragment {
 		ivExfloor.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 
-				openInternalWebview("http://speedyreference.com/floormap/boothinfofall14.htm");
+				openInternalWebview("http://speedyreference.com/floormap/boothinfowin15.htm");
 				//openInternalWebview("http://speedyreference.com/bicsiappcms/floormaps.html");
 			}
 		});
