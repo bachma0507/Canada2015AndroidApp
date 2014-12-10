@@ -85,12 +85,12 @@ public class HomeFragment extends Fragment {
 		ivPresent.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 
-				openInternalWebview("http://www.bicsi.org/m/content.aspx?id=7265");
+				openInternalWebview("http://www.bicsi.org/directory/uplink/default.aspx?id=7712");
 			}
 		});
 		ivSurvey.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				openInternalWebview("http://www.bicsi.org/m/surveys.aspx#one");
+				openInternalWebview("http://www.bicsi.org/directory/uplink/default.aspx?id=6608");
 			}
 		});
 		ivCec.setOnClickListener(new View.OnClickListener() {
