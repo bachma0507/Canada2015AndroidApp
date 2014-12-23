@@ -616,7 +616,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
 }
 	 
   private class GetJSONData  extends AsyncTask<Void, Void, Void> {
-	  
+	  //call webservice
 	  private ProgressDialog pDialog;
 	  private static final String url = "https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0215";
 	  private String myLongStr;
