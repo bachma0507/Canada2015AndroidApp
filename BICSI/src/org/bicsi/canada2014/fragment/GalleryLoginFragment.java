@@ -63,12 +63,19 @@ private NavigateToTabFragmentListener mCallback;
 			}
 		}
 		
+		
+		
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			super.onCreateView(inflater, container, savedInstanceState);
 			View v = inflater.inflate(R.layout.loginsignup, container, false);
 			
+			ParseUser currentUser = ParseUser.getCurrentUser();
+			if (currentUser != null) {
+			  // do stuff with the user
+				mCallback.navigateToTabFragment(newFragment2, null);
+			}
 			
 			username = (EditText) v.findViewById(R.id.username);
 			password = (EditText) v.findViewById(R.id.password);
