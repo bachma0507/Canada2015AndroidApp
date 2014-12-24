@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/confschedicon" />
+                android:src="@drawable/Conference-schedule" />
 
             <TextView
                 android:id="@+id/txtConference"
