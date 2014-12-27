@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/Conference-schedule" />
+                android:src="@drawable/Conference_schedule" />
 
             <TextView
                 android:id="@+id/txtConference"
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/exh_hall_sched" />
+                android:src="@drawable/Exhibit_hall_schedule" />
 
             <TextView
                 android:id="@+id/txtExbhall"
@@ -161,7 +161,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/exhibitors_icon" />
+                android:src="@drawable/ExhibitorsNew" />
 
             <TextView
                 android:id="@+id/txtExhbsearch"
@@ -187,7 +187,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/floorplan_icon" />
+                android:src="@drawable/Ffloor_maps" />
 
             <TextView
                 android:id="@+id/txtExhibitmap"
@@ -249,7 +249,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/committee_icon" />
+                android:src="@drawable/Committee_meetings" />
 
             <TextView
                 android:id="@+id/txtCommittee"
