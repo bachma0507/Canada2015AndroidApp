@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/Conference_schedule" />
+                android:src="@drawable/conference_schedule" />
 
             <TextView
                 android:id="@+id/txtConference"
@@ -64,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/Presentations" />
+                android:src="@drawable/presentations" />
 
             <TextView
                 android:id="@+id/txtPresent"
@@ -90,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/Session_Surveys" />
+                android:src="@drawable/session_surveys" />
 
             <TextView
                 android:id="@+id/txtSurvey"
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/Exhibit_hall_schedule" />
+                android:src="@drawable/exhibit_hall_schedule" />
 
             <TextView
                 android:id="@+id/txtExbhall"
@@ -161,7 +161,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ExhibitorsNew" />
+                android:src="@drawable/exhibitorsnew" />
 
             <TextView
                 android:id="@+id/txtExhbsearch"
@@ -187,7 +187,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/Ffloor_maps" />
+                android:src="@drawable/ffloor_maps" />
 
             <TextView
                 android:id="@+id/txtExhibitmap"
@@ -222,7 +222,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/CEC_Information" />
+                android:src="@drawable/cec_information" />
 
             <TextView
                 android:id="@+id/txtCECinfo"
@@ -249,7 +249,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/Committee_meetings" />
+                android:src="@drawable/committee_meetings" />
 
             <TextView
                 android:id="@+id/txtCommittee"
@@ -285,7 +285,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/Training_and_Exams" />
+                android:src="@drawable/training_and_exams" />
 
             <TextView
                 android:id="@+id/txtTraining"
@@ -329,7 +329,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/Hotel_Information" />
+                android:src="@drawable/hotel_information" />
 
             <TextView
                 android:id="@+id/txtHTinfo"
@@ -355,7 +355,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/Contact_Us" />
+                android:src="@drawable/contact_us" />
 
             <TextView
                 android:id="@+id/txtContactus"
@@ -381,7 +381,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/Email_Your_Comments" />
+                android:src="@drawable/email_your_comments" />
 
             <TextView
                 android:id="@+id/txtWelcome"
