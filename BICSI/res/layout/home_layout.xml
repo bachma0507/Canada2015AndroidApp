@@ -64,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/presentations" />
+                android:src="@drawable/Presentations" />
 
             <TextView
                 android:id="@+id/txtPresent"
@@ -90,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/surveys" />
+                android:src="@drawable/Session_Surveys" />
 
             <TextView
                 android:id="@+id/txtSurvey"
@@ -222,7 +222,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/cec_icon" />
+                android:src="@drawable/CEC_Information" />
 
             <TextView
                 android:id="@+id/txtCECinfo"
@@ -285,7 +285,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/training_icon" />
+                android:src="@drawable/Training_and_Exams" />
 
             <TextView
                 android:id="@+id/txtTraining"
@@ -329,7 +329,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/hotel_icon" />
+                android:src="@drawable/Hotel_Information" />
 
             <TextView
                 android:id="@+id/txtHTinfo"
@@ -355,7 +355,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/contactus_icon" />
+                android:src="@drawable/Contact_Us" />
 
             <TextView
                 android:id="@+id/txtContactus"
@@ -381,7 +381,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/email" />
+                android:src="@drawable/Email_Your_Comments" />
 
             <TextView
                 android:id="@+id/txtWelcome"
