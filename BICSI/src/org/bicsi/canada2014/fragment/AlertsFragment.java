@@ -14,20 +14,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.gson.Gson;
-import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
-import org.bicsi.winter2015.R;
+import org.bicsi.canada2015.R;
 import org.bicsi.canada2014.activities.MainActivity;
 import org.bicsi.canada2014.adapter.AlertAdapter;
 import org.bicsi.canada2014.adapter.AlertsAdapter;
@@ -35,7 +31,6 @@ import org.bicsi.canada2014.common.MizeUtil.NavigateToTabFragmentListener;
 import org.bicsi.canada2014.models.Alert;
 import org.bicsi.canada2014.models.AlertModel;
 import org.bicsi.canada2014.web.AsyncTaskPost;
-import org.bicsi.canada2014.web.RequestTypes;
 
 
 public class AlertsFragment extends ListFragment {

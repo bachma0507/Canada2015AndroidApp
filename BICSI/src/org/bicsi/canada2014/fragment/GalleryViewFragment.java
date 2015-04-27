@@ -7,9 +7,8 @@ import java.util.List;
 
 import org.bicsi.canada2014.ListViewAdapter;
 import org.bicsi.canada2014.WorldPopulation;
-import org.bicsi.winter2015.R;
+import org.bicsi.canada2015.R;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;

@@ -1,9 +1,8 @@
 package org.bicsi.canada2014.fragment;
 
-import org.bicsi.winter2015.R;
-import android.app.Activity;
+import org.bicsi.canada2015.R;
+
 import android.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;

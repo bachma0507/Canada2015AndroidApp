@@ -1,13 +1,10 @@
 package org.bicsi.canada2014.activities;
 import org.bicsi.canada2014.common.MizeUtil.NavigateToTabFragmentListener;
-import org.bicsi.canada2014.fragment.ConfSchedSingleFragment;
-import org.bicsi.winter2015.R;
+import org.bicsi.canada2015.R;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

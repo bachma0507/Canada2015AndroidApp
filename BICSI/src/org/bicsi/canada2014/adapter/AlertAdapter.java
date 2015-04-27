@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import org.bicsi.winter2015.R;
+import org.bicsi.canada2015.R;
 
 import org.bicsi.canada2014.models.AlertModel;
 

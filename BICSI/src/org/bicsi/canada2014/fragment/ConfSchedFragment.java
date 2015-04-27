@@ -2,23 +2,17 @@ package org.bicsi.canada2014.fragment;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
-import org.bicsi.winter2015.R;
+
+import org.bicsi.canada2015.R;
 import org.bicsi.canada2014.adapter.SQLiteDBcShed;
-import org.bicsi.canada2014.fragment.ConfSchedDetailFragment;
 import org.bicsi.canada2014.common.MizeUtil.NavigateToTabFragmentListener;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.app.ListFragment;
 import android.content.Context;
-import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -29,9 +23,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.FilterQueryProvider;
-import android.widget.TextView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Toast;
+
 import org.bicsi.canada2014.activities.MainActivity;
 
 

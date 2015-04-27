@@ -3,23 +3,17 @@ package org.bicsi.canada2014.fragment;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 import android.content.Intent;
 
-import org.bicsi.winter2015.R;
+import org.bicsi.canada2015.R;
 import org.bicsi.canada2014.activities.MainActivity;
 import org.bicsi.canada2014.common.MizeUtil.NavigateToTabFragmentListener;
-
-import com.google.analytics.tracking.android.EasyTracker;
-import com.google.analytics.tracking.android.MapBuilder;
 
 public class HomeFragment extends Fragment {
 
@@ -85,18 +79,18 @@ public class HomeFragment extends Fragment {
 		ivPresent.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 
-				openInternalWebview("http://www.bicsi.org/directory/uplink/default.aspx?id=7712");
+				openInternalWebview("http://www.bicsi.org/directory/uplink/default.aspx?id=7889");
 			}
 		});
 		ivSurvey.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				openInternalWebview("http://www.bicsi.org/directory/uplink/default.aspx?id=6608");
+				openInternalWebview("http://www.bicsi.org/directory/uplink/default.aspx?id=7890");
 			}
 		});
 		ivCec.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 
-				openInternalWebview("http://www.bicsi.org/m/content.aspx?id=7337");
+				openInternalWebview("http://www.bicsi.org/m/content.aspx?id=7767");
 			}
 		});
 		ivExhall.setOnClickListener(new View.OnClickListener() {
@@ -119,7 +113,7 @@ public class HomeFragment extends Fragment {
 		ivExfloor.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 
-				openInternalWebview("http://speedyreference.com/floormap/boothinfowin15.htm");
+				openInternalWebview("http://speedyreference.com/floormap/boothinfocan15.htm");
 				//openInternalWebview("http://speedyreference.com/bicsiappcms/floormaps.html");
 			}
 		});
@@ -131,7 +125,7 @@ public class HomeFragment extends Fragment {
 		ivHtinfo.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 
-				openInternalWebview("http://www.bicsi.org/m/content.aspx?id=7343");
+				openInternalWebview("http://www.bicsi.org/m/content.aspx?id=7737");
 			}
 		});
 		ivCommeet.setOnClickListener(new View.OnClickListener() {
@@ -143,7 +137,7 @@ public class HomeFragment extends Fragment {
 		ivTrainexam.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 
-				openInternalWebview("http://www.bicsi.org/m/content.aspx?id=7355");
+				openInternalWebview("http://www.bicsi.org/m/content.aspx?id=7755");
 				
 			}
 		});
@@ -153,7 +147,7 @@ public class HomeFragment extends Fragment {
 				Intent i = new Intent(Intent.ACTION_SEND);
 				i.setType("message/rfc822");
 				i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"support@bicsi.org"});
-				i.putExtra(Intent.EXTRA_SUBJECT, "Comments for Winter 2015 Conference");
+				i.putExtra(Intent.EXTRA_SUBJECT, "Comments for Canada 2015 Conference");
 				i.putExtra(Intent.EXTRA_TEXT   , "{Device - Android} Your Comments:");
 				try {
 				    startActivity(Intent.createChooser(i, "Send mail..."));

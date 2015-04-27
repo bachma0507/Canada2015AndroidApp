@@ -2,24 +2,15 @@ package org.bicsi.canada2014.fragment;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnKeyListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.content.Context;
-import android.content.Intent;
 
-import org.bicsi.winter2015.R;
-import org.bicsi.canada2014.activities.MainActivity;
-import org.bicsi.canada2014.activities.Welcome;
+import org.bicsi.canada2015.R;
 
 import android.view.View.OnClickListener;
 import android.view.inputmethod.InputMethodManager;
@@ -30,7 +21,6 @@ import android.widget.Toast;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
-import com.parse.SignUpCallback;
 
 import org.bicsi.canada2014.common.MizeUtil.NavigateToTabFragmentListener;
 

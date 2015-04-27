@@ -1,6 +1,6 @@
 package org.bicsi.canada2014.fragment;
 
-import org.bicsi.winter2015.R;
+import org.bicsi.canada2015.R;
 import org.bicsi.canada2014.activities.MainActivity;
 
 import android.annotation.SuppressLint;

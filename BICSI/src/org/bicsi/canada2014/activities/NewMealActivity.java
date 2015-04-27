@@ -2,19 +2,14 @@ package org.bicsi.canada2014.activities;
 
 import org.bicsi.canada2014.Meal;
 import org.bicsi.canada2014.fragment.fragment_new_upload;
-import org.bicsi.winter2015.R;
+import org.bicsi.canada2015.R;
 
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-
-import com.parse.ParseFile;
 
 /*
  * NewMealActivity contains two fragments that handle

@@ -15,7 +15,7 @@ import java.util.WeakHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import org.bicsi.winter2015.R;
+import org.bicsi.canada2015.R;
 
 import android.os.Handler;
 import android.content.Context;

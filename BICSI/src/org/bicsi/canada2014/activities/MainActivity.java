@@ -13,13 +13,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
 import org.apache.http.client.HttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.bicsi.winter2015.R;
+import org.bicsi.canada2015.R;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
@@ -45,16 +44,12 @@ import android.view.View.OnClickListener;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListAdapter;
-import android.widget.SimpleAdapter;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.crittercism.app.Crittercism;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.analytics.tracking.android.MapBuilder;
-import com.google.gson.Gson;
 
 import org.bicsi.canada2014.adapter.SQLiteDB;
 import org.bicsi.canada2014.adapter.SQLiteDBcShed;
@@ -66,25 +61,16 @@ import org.bicsi.canada2014.fragment.AboutUsFragment;
 import org.bicsi.canada2014.fragment.AlertsFragment;
 import org.bicsi.canada2014.fragment.GalleryLoginFragment;
 import org.bicsi.canada2014.fragment.HomeFragment;
-import org.bicsi.canada2014.fragment.EhallSchedFragment2;
-import org.bicsi.canada2014.fragment.SocialMediaFragment;
 import org.bicsi.canada2014.fragment.WebviewFragment;
-import org.bicsi.canada2014.models.AlertModel;
 import org.bicsi.canada2014.web.AsyncTaskPost;
-import org.bicsi.canada2014.web.RequestTypes;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.parse.Parse;
-import com.parse.ParseACL;
 import com.parse.ParseAnalytics;
 import com.parse.ParseInstallation;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
-import com.parse.ParseUser;
-import com.parse.PushService;
-import com.parse.ParseAnonymousUtils;
 import com.pushio.manager.PushIOManager;
 
 
@@ -207,7 +193,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
       ParseInstallation.getCurrentInstallation().saveInBackground();
       ParseAnalytics.trackAppOpened(getIntent());   		
         
-        Crittercism.initialize(getApplicationContext(), "543ec96783fb7964b8000010");
+        Crittercism.initialize(getApplicationContext(), "54f9fd26e0697fa4496373a1");
         
         setupTabs();
 		resetTabs();		
@@ -618,7 +604,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
   private class GetJSONData  extends AsyncTask<Void, Void, Void> {
 	  //call webservice
 	  private ProgressDialog pDialog;
-	  private static final String url = "https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0215";
+	  private static final String url = "https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-CANADA-ON-0415";
 	  private String myLongStr;
 	  private String myLongStrEnd;
 	  
@@ -889,7 +875,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
   
   public void GetURL(){
 		// WebServer Request URL
-       String serverURL = "http://speedyreference.com/ehscheduleW15.php";
+       String serverURL = "http://speedyreference.com/ehscheduleC15.php";
        
        // Use AsyncTask execute Method To Prevent ANR Problem
        new LongOperation().execute(serverURL);
@@ -897,7 +883,7 @@ MizeUtil.NavigateToTabFragmentListener, PromptReturnListener, OnClickListener /*
   
   public void GetURLCSched(){
 		// WebServer Request URL
-     String serverURL = "http://speedyreference.com/cscheduleW15.php";
+     String serverURL = "http://speedyreference.com/cscheduleC15.php";
      
      // Use AsyncTask execute Method To Prevent ANR Problem
      new LongOperationCSched().execute(serverURL);

@@ -3,13 +3,11 @@ package org.bicsi.canada2014;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.bicsi.winter2015.R;
+import org.bicsi.canada2015.R;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;

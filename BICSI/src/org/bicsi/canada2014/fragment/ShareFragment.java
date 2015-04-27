@@ -1,21 +1,18 @@
 package org.bicsi.canada2014.fragment;
 
 
-import org.bicsi.winter2015.R;
+import org.bicsi.canada2015.R;
 import org.bicsi.canada2014.activities.MainActivity;
 
-import android.R.string;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
